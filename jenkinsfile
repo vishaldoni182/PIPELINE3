@@ -9,8 +9,8 @@ pipeline {
                stages {
                stage ('BUILD') {
                          steps {
-                          echo " NAME ${params.NAME} "
-                             sh 'echo ${params.NAME} '
+                          echo "NAME ${params.NAME}"
+                             sh "echo ${params.NAME}"
                               }
                                 }
                 stage ('TEST') {
@@ -26,4 +26,4 @@ pipeline {
                                
                   
                      
-             
+            
