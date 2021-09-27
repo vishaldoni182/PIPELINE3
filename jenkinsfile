@@ -11,6 +11,7 @@ pipeline {
                          steps {
                           echo "NAME ${params.NAME}"
                              sh "echo ${params.NAME}"
+                             sh 'echo $? '
                               }
                                 }
                 stage ('TEST') {
